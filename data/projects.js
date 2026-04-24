@@ -37,7 +37,7 @@ const projects = [
     demo: "https://final-project-ds49-group3-habits.streamlit.app/",
     images: {
       architecture: "",
-      dashboard: "/projects/delivery-price-predictor/dashboard.png",
+      dashboard: "/projects/predicting-delivery-subtotals/dashboard.png",
     },
   },
 ];
