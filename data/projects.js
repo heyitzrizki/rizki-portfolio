@@ -26,6 +26,20 @@ const projects = [
       dashboard: "",
     },
   },
+
+  {
+    slug: "predicting-delivery-subtotals",
+    title: "Delivery Price Predictor",
+    description:
+      "A machine learning model to predict delivery price based on various factors.",
+    stack: ["Python", "Scikit-learn", "Pandas", "NumPy"],
+    github: "https://github.com/heyitzrizki/Predicting-Delivery-Subtotals-Using-Real-Time-Operational-Signals",
+    demo: "https://final-project-ds49-group3-habits.streamlit.app/",
+    images: {
+      architecture: "",
+      dashboard: "/projects/delivery-price-predictor/dashboard.png",
+    },
+  },
 ];
 
 export default projects;
