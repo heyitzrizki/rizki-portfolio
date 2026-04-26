@@ -10,25 +10,46 @@ export default function AboutFocus() {
             Building useful systems, not just models
           </h2>
           <p className="text-gray-700 leading-8">
-            My portfolio focuses on applied machine learning in finance and
-            decision-support systems. I am especially interested in transforming
-            technical research into systems that are interpretable, practical,
-            and relevant to real-world business problems.
+            I’m Rizki Anwar, a Business Analytics graduate student at Ajou University in
+            South Korea and a Global Korea Scholarship awardee. I’m interested in building
+            data science and AI systems that are not only technically sound, but also useful
+            for real business decisions.
           </p>
-        </div>
 
-        <div>
-          <p className="text-sm uppercase tracking-widest text-gray-500 mb-3">
-            What I Work On
           </p>
-          <ul className="space-y-4 text-gray-700 leading-8">
-            <li>• Credit risk scoring and probability calibration</li>
-            <li>• Regime-aware financial early warning systems</li>
-            <li>• Local-first RAG systems with privacy-focused inference</li>
-            <li>• AI portfolios that connect modeling, UX, and deployment</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+            My focus is on applied data science and AI systems for finance, risk
+            modeling, and decision-support. I like projects where machine learning is
+            not just used to get a good score, but to help people understand problems
+            and make better decisions.
+          </p>
+
+          <p>
+            I started from a management background, so I tend to look at data from both
+            technical and business angles. I’ve worked on projects involving credit
+            risk, financial early warning systems, Gen Z financial behavior, keyword
+            market intelligence, and business dashboards.
+          </p>
+
+          <p>
+            Recently, I’ve been building portfolio projects around credit intelligence,
+            local-first RAG, time-series modeling, and deployable AI dashboards. I’m
+            especially interested in systems that combine modeling, explainability, and
+            practical user experience.
+          </p>
+
+          <p>
+            I’m also continuously sharpening my technical foundation through
+            certifications and hands-on learning, including IBM AI Developer, Microsoft
+            Azure Data Fundamentals, DataCamp AI Engineer for Data Scientists
+            Associate, and Data Science Bootcamp.
+          </p>
+
+          <p> 
+            You can find my projects on GitHub and my professional background on
+            LinkedIn. I’m always interested in learning from people working on AI,
+            finance, data products, and real-world machine learning systems.
+      </p>
+  </div>
+</section>
   );
 }
