@@ -12,11 +12,10 @@ export default function Hero() {
       </h1>
 
       <p className="text-xl text-gray-700 max-w-3xl mb-8 leading-8">
-        I am a Business Analytics graduate student at Ajou University and a Global
-        Korea Scholarship awardee, building applied AI and data science systems for
-        finance, risk modeling, and intelligent decision-support. My work connects
-        machine learning, analytics, and business strategy into practical,
-        interpretable, and deployable solutions.
+        I build applied AI and data science systems for finance, risk modeling,
+        and intelligent decision-support. My work connects machine learning,
+        analytics, and business strategy into practical, interpretable, and
+        deployable solutions.
       </p>
 
       <div className="flex flex-wrap gap-4 mb-10">
@@ -35,6 +34,15 @@ export default function Hero() {
         >
           GitHub
         </a>
+
+        <a
+          href="https://www.linkedin.com/in/rizkianw"
+          target="_blank"
+          rel="noreferrer"
+          className="px-5 py-3 border rounded-xl"
+        >
+          LinkedIn
+        </a>
       </div>
 
       <div className="grid md:grid-cols-3 gap-4 max-w-4xl">
@@ -45,7 +53,7 @@ export default function Hero() {
 
         <div className="border rounded-2xl p-5">
           <p className="text-sm text-gray-500 mb-2">Strength</p>
-          <p className="font-semibold">Analytics, Modeling, & Product Thinking</p>
+          <p className="font-semibold">Analytics, Modeling & Product Thinking</p>
         </div>
 
         <div className="border rounded-2xl p-5">
