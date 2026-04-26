@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import AboutFocus from "../components/AboutFocus";
 import ProjectCard from "../components/ProjectCard";
+import Certifications from "../components/Certifications";
 import Footer from "../components/Footer";
 import projects from "../data/projects";
 
@@ -23,6 +24,8 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <Certifications />
 
       <Footer />
     </main>
