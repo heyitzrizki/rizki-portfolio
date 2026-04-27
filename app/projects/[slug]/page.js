@@ -34,27 +34,27 @@ export default async function ProjectDetailPage({ params }) {
   }
 
   return (
-    <main className="min-h-screen bg-white text-black">
+    <main className="min-h-screen bg-[#F8FBFF] text-[#061A40]">
       <Navbar />
 
-      <section className="max-w-4xl mx-auto px-6 py-16">
+      <section className="max-w-5xl mx-auto px-6 py-14">
         <Link
           href="/projects"
-          className="text-sm text-gray-500 hover:text-black transition"
+          className="text-sm text-[#5B6B82] hover:text-[#0353A4] transition"
         >
           ← Back to Projects
         </Link>
 
-        <div className="mt-8 mb-12">
-          <p className="text-sm uppercase tracking-widest text-gray-500 mb-3">
+        <header className="mt-8 mb-12 border-b border-[#D6E4F2] pb-10">
+          <p className="text-sm uppercase tracking-widest text-[#0353A4] mb-4">
             {project.category || "Project"}
           </p>
 
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6 text-[#061A40]">
             {project.title}
           </h1>
 
-          <p className="text-lg text-gray-700 leading-8">
+          <p className="text-lg text-[#334155] leading-8 max-w-3xl">
             {project.description}
           </p>
 
@@ -62,7 +62,7 @@ export default async function ProjectDetailPage({ params }) {
             {project.stack.map((tech) => (
               <span
                 key={tech}
-                className="text-xs border rounded-full px-3 py-1 text-gray-700"
+                className="text-xs border border-[#B9D6F2] rounded-full px-3 py-1 text-[#061A40] bg-white"
               >
                 {tech}
               </span>
@@ -74,7 +74,7 @@ export default async function ProjectDetailPage({ params }) {
               href={project.github}
               target="_blank"
               rel="noreferrer"
-              className="px-5 py-3 bg-black text-white rounded-xl"
+              className="px-5 py-3 bg-[#061A40] text-white rounded-xl hover:bg-[#003559] transition"
             >
               View Repository
             </a>
@@ -84,70 +84,83 @@ export default async function ProjectDetailPage({ params }) {
                 href={project.demo}
                 target="_blank"
                 rel="noreferrer"
-                className="px-5 py-3 border rounded-xl"
+                className="px-5 py-3 border border-[#B9D6F2] text-[#061A40] rounded-xl hover:bg-[#EAF4FF] transition"
               >
                 Open Live Demo
               </a>
             )}
           </div>
-        </div>
+        </header>
 
-        <div className="space-y-12">
-          <ProjectSection title="Overview" content={project.overview} />
-          <ProjectSection title="Problem" content={project.problem} />
-          <ProjectSection title="System Design" content={project.systemDesign} />
-          <ProjectSection title="Data / Method" content={project.dataMethod} />
-          <ProjectSection title="Model / Pipeline" content={project.modelPipeline} />
-          <ProjectSection title="Output" content={project.output} />
-          <ProjectSection title="Limitations" content={project.limitations} />
-
-          {project.images?.architecture && (
-            <section>
-              <h2 className="text-2xl font-semibold mb-4">Architecture</h2>
-              <img
-                src={project.images.architecture}
-                alt={`${project.title} architecture`}
-                className="w-full rounded-2xl border"
-              />
-            </section>
-          )}
-
-          {project.images?.dashboard && (
-            <section>
-              <h2 className="text-2xl font-semibold mb-4">System Output</h2>
-              <img
-                src={project.images.dashboard}
-                alt={`${project.title} dashboard`}
-                className="w-full rounded-2xl border"
-              />
-            </section>
-          )}
-
-          <section>
-            <h2 className="text-2xl font-semibold mb-4">GitHub / Demo</h2>
-
-            <div className="flex flex-wrap gap-4">
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noreferrer"
-                className="px-5 py-3 bg-black text-white rounded-xl"
-              >
-                View Repository
+        <div className="grid md:grid-cols-[220px_1fr] gap-10">
+          <aside className="hidden md:block">
+            <div className="sticky top-8 text-sm text-[#5B6B82] space-y-3">
+              <p className="font-semibold text-[#061A40] mb-4">Case Study</p>
+              <a href="#overview" className="block hover:text-[#0353A4] transition">
+                Overview
               </a>
-
-              {project.demo && (
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="px-5 py-3 border rounded-xl"
-                >
-                  Open Live Demo
-                </a>
-              )}
+              <a href="#problem" className="block hover:text-[#0353A4] transition">
+                Problem
+              </a>
+              <a href="#system-design" className="block hover:text-[#0353A4] transition">
+                System Design
+              </a>
+              <a href="#data-method" className="block hover:text-[#0353A4] transition">
+                Data / Method
+              </a>
+              <a href="#model-pipeline" className="block hover:text-[#0353A4] transition">
+                Model / Pipeline
+              </a>
+              <a href="#output" className="block hover:text-[#0353A4] transition">
+                Output
+              </a>
+              <a href="#limitations" className="block hover:text-[#0353A4] transition">
+                Limitations
+              </a>
             </div>
-          </section>
+          </aside>
+
+          <div className="space-y-10">
+            <ProjectSection id="overview" title="Overview" content={project.overview} />
+            <ProjectSection id="problem" title="Problem" content={project.problem} />
+            <ProjectSection id="system-design" title="System Design" content={project.systemDesign} />
+            <ProjectSection id="data-method" title="Data / Method" content={project.dataMethod} />
+            <ProjectSection id="model-pipeline" title="Model / Pipeline" content={project.modelPipeline} />
+            <ProjectSection id="output" title="Output" content={project.output} />
+            <ProjectSection id="limitations" title="Limitations" content={project.limitations} />
+
+            {project.images?.architecture && (
+              <section className="pt-4">
+                <p className="text-sm uppercase tracking-widest text-[#0353A4] mb-3">
+                  Architecture
+                </p>
+                <h2 className="text-2xl font-semibold mb-4 text-[#061A40]">
+                  System Architecture
+                </h2>
+                <img
+                  src={project.images.architecture}
+                  alt={`${project.title} architecture`}
+                  className="w-full rounded-2xl border border-[#D6E4F2]"
+                />
+              </section>
+            )}
+
+            {project.images?.dashboard && (
+              <section className="pt-4">
+                <p className="text-sm uppercase tracking-widest text-[#0353A4] mb-3">
+                  Output
+                </p>
+                <h2 className="text-2xl font-semibold mb-4 text-[#061A40]">
+                  System Output
+                </h2>
+                <img
+                  src={project.images.dashboard}
+                  alt={`${project.title} dashboard`}
+                  className="w-full rounded-2xl border border-[#D6E4F2]"
+                />
+              </section>
+            )}
+          </div>
         </div>
       </section>
 
@@ -156,13 +169,16 @@ export default async function ProjectDetailPage({ params }) {
   );
 }
 
-function ProjectSection({ title, content }) {
+function ProjectSection({ id, title, content }) {
   if (!content) return null;
 
   return (
-    <section>
-      <h2 className="text-2xl font-semibold mb-4">{title}</h2>
-      <p className="text-gray-700 leading-8">{content}</p>
+    <section id={id} className="border-b border-[#D6E4F2] pb-8 scroll-mt-24">
+      <p className="text-sm uppercase tracking-widest text-[#0353A4] mb-3">
+        {title}
+      </p>
+
+      <p className="text-[#334155] leading-8">{content}</p>
     </section>
   );
 }

@@ -10,19 +10,19 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-white text-black">
+    <main className="min-h-screen bg-[#F8FBFF] text-[#061A40]">
       <Navbar />
 
       <section className="max-w-4xl mx-auto px-6 py-16">
-        <p className="text-sm uppercase tracking-widest text-gray-500 mb-4">
+        <p className="text-sm uppercase tracking-widest text-[#0353A4] mb-4">
           About
         </p>
 
-        <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-8">
+        <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-8 text-[#061A40]">
           Hi, I’m Rizki.
         </h1>
 
-        <div className="space-y-6 text-lg leading-8 text-gray-800">
+        <div className="space-y-6 text-lg leading-8 text-[#334155]">
           <p>
             I’m Rizki Anwar Syaifullah, a Business Analytics graduate student at
             Ajou University in South Korea and a Global Korea Scholarship
@@ -80,7 +80,7 @@ export default function AboutPage() {
         <div className="flex flex-wrap gap-4 mt-10">
           <Link
             href="/projects"
-            className="px-5 py-3 bg-black text-white rounded-xl"
+            className="px-5 py-3 bg-[#061A40] text-white rounded-xl hover:bg-[#003559] transition"
           >
             View Projects
           </Link>
@@ -89,7 +89,7 @@ export default function AboutPage() {
             href="https://github.com/heyitzrizki"
             target="_blank"
             rel="noreferrer"
-            className="px-5 py-3 border rounded-xl"
+            className="px-5 py-3 border border-[#B9D6F2] text-[#061A40] rounded-xl hover:bg-[#EAF4FF] transition"
           >
             GitHub
           </a>
@@ -98,14 +98,14 @@ export default function AboutPage() {
             href="https://www.linkedin.com/in/rizkianw"
             target="_blank"
             rel="noreferrer"
-            className="px-5 py-3 border rounded-xl"
+            className="px-5 py-3 border border-[#B9D6F2] text-[#061A40] rounded-xl hover:bg-[#EAF4FF] transition"
           >
             LinkedIn
           </a>
 
           <a
             href="mailto:anwars.rizki@gmail.com"
-            className="px-5 py-3 border rounded-xl"
+            className="px-5 py-3 border border-[#B9D6F2] text-[#061A40] rounded-xl hover:bg-[#EAF4FF] transition"
           >
             Email
           </a>

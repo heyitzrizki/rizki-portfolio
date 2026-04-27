@@ -1,15 +1,23 @@
 @import "tailwindcss";
 
+:root {
+  --color-pale-sky: #b9d6f2;
+  --color-prussian-blue: #061a40;
+  --color-sapphire: #0353a4;
+  --color-cornflower-ocean: #006daa;
+  --color-deep-space-blue: #003559;
+
+  --background: #f8fbff;
+  --foreground: #061a40;
+  --muted: #5b6b82;
+  --border: #d6e4f2;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: white;
-  color: black;
-}
-
-a {
-  text-decoration: none;
+  background: var(--background);
+  color: var(--foreground);
 }
