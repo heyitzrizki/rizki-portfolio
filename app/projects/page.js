@@ -3,6 +3,12 @@ import Footer from "../../components/Footer";
 import ProjectCard from "../../components/ProjectCard";
 import projects from "../../data/projects";
 
+export const metadata = {
+  title: "Projects",
+  description:
+    "Selected data science, machine learning, and AI system projects by Rizki Anwar Syaifullah, covering credit risk, RAG systems, and operational analytics.",
+};
+
 export default function ProjectsPage() {
   return (
     <main className="min-h-screen bg-white text-black">

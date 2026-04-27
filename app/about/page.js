@@ -3,7 +3,7 @@ import Footer from "../../components/Footer";
 import Link from "next/link";
 
 export const metadata = {
-  title: "About | Rizki Anwar Syaifullah",
+  title: "About",
   description:
     "About Rizki Anwar Syaifullah, a Business Analytics graduate student focused on applied AI, financial machine learning, risk modeling, and data science systems.",
 };

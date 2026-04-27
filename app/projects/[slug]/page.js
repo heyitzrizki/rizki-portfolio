@@ -4,6 +4,27 @@ import projects from "../../../data/projects";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const project = projects.find((p) => p.slug === slug);
+
+  if (!project) {
+    return {
+      title: "Project Not Found",
+    };
+  }
+
+  return {
+    title: project.title,
+    description: project.description,
+    openGraph: {
+      title: `${project.title} | Rizki Anwar Syaifullah`,
+      description: project.description,
+      type: "article",
+    },
+  };
+}
+
 export default async function ProjectDetailPage({ params }) {
   const { slug } = await params;
   const project = projects.find((p) => p.slug === slug);
