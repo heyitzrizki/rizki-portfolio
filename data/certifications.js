@@ -40,7 +40,7 @@ const certifications = [
     url: "",
   },
   {
-    name: "TOEIC",
+    name: "TOEIC Listening & Reading (930)",
     issuer: "YBM",
     date: "Issued Feb 2026 · Expires Feb 2028",
     image: "/certifications/ybmnet_logo.jfif",
