@@ -56,8 +56,8 @@ const projects = [
   github: "https://github.com/heyitzrizki/fmcg-business-performance-analytics_new",
   demo: "https://fmcg-business-performance-analyticsnew.streamlit.app/",
   images: {
-    architecture: "",
-    dashboard: "",
+    architecture: "/projects/fmcg-business-performance/architecture.png",
+    dashboard: "/projects/fmcg-business-performance/dashboard.png",
   },
 },
 
