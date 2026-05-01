@@ -57,7 +57,7 @@ const projects = [
   demo: "https://fmcg-business-performance-analyticsnew.streamlit.app/",
   images: {
     architecture: "/projects/fmcg-business-performance/architecture.png",
-    dashboard: "/projects/fmcg-business-performance/dashboard.png",
+    dashboard: "/projects/fmcg-business-performance/dashboard-overview.png",
   },
 },
 
