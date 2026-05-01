@@ -30,6 +30,37 @@ const projects = [
   },
 },
 
+{
+  slug: "fmcg-business-performance",
+  title: "FMCG Business Performance & P&L Analytics Dashboard",
+  category: "Business Analytics • FMCG",
+  description:
+    "Business planning dashboard for sales performance, profitability, budget variance, revenue forecasting, and product portfolio strategy.",
+  overview:
+    "This project simulates how an FMCG business planning analyst can connect sales, cost, marketing, budget, forecast, and product portfolio data into one decision-support dashboard.",
+  problem:
+    "FMCG teams need more than sales reports. They need to understand where revenue comes from, whether performance is profitable, whether results are ahead or behind plan, and which products or categories require action.",
+  approach:
+    "Built an end-to-end analytics pipeline covering KPI engineering, P&L analysis, simulated budget variance, interpretable revenue forecasting, ML benchmark comparison, and product portfolio segmentation.",
+  systemDesign:
+    "The system separates raw sales data processing, business KPI engineering, P&L and budget analysis, forecasting, portfolio segmentation, and dashboard presentation into a layered business analytics workflow.",
+  dataMethod:
+    "The workflow uses FMCG-style transaction data with product, channel, region, promotion, sales, marketing spend, COGS, logistics cost, net revenue, and profit fields. The data is transformed into dashboard-ready artifacts for executive reporting, planning, and portfolio analysis.",
+  modelPipeline:
+    "The forecasting layer compares Seasonal Naive, Moving Average, Holt-Winters, SARIMA, and leakage-safe ML benchmark models. The final forecast prioritizes out-of-sample performance and business interpretability rather than model complexity.",
+  output:
+    "Interactive Streamlit dashboard for executive overview, sales performance, P&L and margin analysis, budget vs actual tracking, forecasting, and product portfolio strategy.",
+  limitations:
+    "This is a portfolio prototype using public FMCG-style data. Budget values are simulated using prior-year same-month performance and target growth assumptions. Forecast planning bands are based on test error and should not be interpreted as formal financial guidance.",
+  stack: ["Python", "Pandas", "Plotly", "Forecasting", "P&L", "Streamlit"],
+  github: "https://github.com/heyitzrizki/fmcg-business-performance-analytics_new",
+  demo: "https://fmcg-business-performance-analyticsnew.streamlit.app/",
+  images: {
+    architecture: "",
+    dashboard: "",
+  },
+},
+
   {
     slug: "local-rag",
     title: "Local RAG System",
