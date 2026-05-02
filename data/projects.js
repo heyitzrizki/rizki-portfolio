@@ -63,7 +63,7 @@ const projects = [
     "Plotly",
   ],
   github: "https://github.com/heyitzrizki/risk-based-loan-pricing-simulator",
-  demo: "PASTE_STREAMLIT_DEMO_LINK_HERE",
+  demo: "https://risk-based-loan-pricing-simulator-2gsn9dddekhjxtj7zvpmje.streamlit.app/Pricing_Simulator",
   images: {
     architecture: "/projects/risk-based-loan-pricing/architecture.png",
     dashboard: "/projects/risk-based-loan-pricing/dashboard-overview.png",
