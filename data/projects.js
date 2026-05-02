@@ -31,6 +31,46 @@ const projects = [
 },
 
 {
+  slug: "risk-based-loan-pricing",
+  title: "Risk-Based Loan Pricing & Portfolio Profitability Simulator",
+  category: "Finance Analytics • Credit Risk",
+  description:
+    "A credit analytics simulator that translates borrower default risk into risk-based pricing, expected loss, economic profit, and approval strategy decisions.",
+  overview:
+    "This project extends credit scoring into a business-facing pricing and profitability simulator. Instead of stopping at default prediction, the system converts borrower-level PD into expected loss, required interest rate, pricing gap, economic profit, and portfolio approval strategy.",
+  problem:
+    "Traditional credit scoring projects often end with a probability of default score. In real lending decisions, risk teams also need to know whether the offered loan rate is sufficient, whether the borrower is underpriced or overpriced, and how different approval strategies affect profitability and portfolio risk.",
+  approach:
+    "Built an end-to-end risk-based pricing engine using model-generated PD, internal risk grades, LGD assumptions, EAD, funding cost, operating cost, target margin, capital charge, collection cost, and tail-risk penalty. The final Streamlit app includes a manual pricing simulator, borrower-level explorer, approval strategy comparison, portfolio frontier, and governance documentation.",
+  systemDesign:
+    "The system separates PD modeling, internal grade assignment, expected loss estimation, required-rate calculation, economic profit adjustment, policy simulation, scenario analysis, and dashboard deployment into a modular analytics workflow.",
+  dataMethod:
+    "The workflow uses Lending Club loan-level data. Borrower and loan features are processed to train PD models, generate calibrated default probabilities, assign internal grades, and produce pricing-ready artifacts. EAD is proxied by loan amount, while LGD and economic risk adjustments are assumption-based because recovery data is unavailable.",
+  modelPipeline:
+    "The modeling layer uses XGBoost probability output as the final PD source after comparing discrimination and calibration behavior. PD outputs are mapped into internal grades, then used in the pricing engine to calculate expected loss, annualized expected loss rate, required rate, pricing gap, expected profit, capital charge, collection cost, tail-risk penalty, and economic profit.",
+  output:
+    "Interactive Streamlit dashboard with executive overview, borrower-level pricing explorer, manual risk-based pricing simulator, approval strategy comparison, portfolio frontier analysis, and model governance page.",
+  limitations:
+    "This is a portfolio analytics prototype, not a production regulatory credit decisioning system. LGD, capital charge, collection cost, and tail-risk penalty are simulation assumptions. A production system would require recovery data, reject inference, regulatory capital treatment, fairness testing, monitoring, and model risk management approval.",
+  stack: [
+    "Python",
+    "Pandas",
+    "XGBoost",
+    "Expected Loss",
+    "Risk-Based Pricing",
+    "Economic Profit",
+    "Streamlit",
+    "Plotly",
+  ],
+  github: "https://github.com/heyitzrizki/risk-based-loan-pricing-simulator",
+  demo: "PASTE_STREAMLIT_DEMO_LINK_HERE",
+  images: {
+    architecture: "/projects/risk-based-loan-pricing/architecture.png",
+    dashboard: "/projects/risk-based-loan-pricing/dashboard-overview.png",
+  },
+},
+
+{
   slug: "fmcg-business-performance",
   title: "FMCG Business Performance & P&L Analytics Dashboard",
   category: "Business Analytics • FMCG",
