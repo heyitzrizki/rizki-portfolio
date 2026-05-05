@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 import projects from "../data/projects";
 
 export default function Home() {
-  const featuredProjects = projects.slice(0, 3);
+  const featuredProjects = projects.slice(0, 4);
 
   return (
     <main className="min-h-screen bg-[#F8FBFF] text-[#061A40]">

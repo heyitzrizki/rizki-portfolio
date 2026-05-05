@@ -5,6 +5,12 @@ const projects = [
   category: "AI System • Credit Risk",
   description:
     "Credit risk decision-support system for borrower rating, expected loss simulation, and stress testing.",
+  cardProblem:
+    "Credit teams need calibrated risk signals, not just raw default scores.",
+  cardApproach:
+    "Built a hybrid TCN + XGBoost workflow with calibration, grading, ECL, and stress testing.",
+  cardOutput:
+    "Delivered an executive dashboard for borrower rating, portfolio monitoring, and stress scenarios.",
   overview:
     "End-to-end credit risk decision-support system for borrower rating, expected loss simulation, and stress testing.",
   problem:
@@ -36,6 +42,12 @@ const projects = [
   category: "Finance Analytics • Credit Risk",
   description:
     "A credit analytics simulator that translates borrower default risk into risk-based pricing, expected loss, economic profit, and approval strategy decisions.",
+  cardProblem:
+  "Lenders need to know whether a loan is priced properly, not only whether a borrower may default.",
+  cardApproach:
+    "Converted PD, LGD, EAD, costs, and margin assumptions into required rate and profit metrics.",
+  cardOutput:
+    "Built a pricing simulator for approval strategy, pricing gap, and economic profit analysis.",
   overview:
     "This project extends credit scoring into a business-facing pricing and profitability simulator. Instead of stopping at default prediction, the system converts borrower-level PD into expected loss, required interest rate, pricing gap, economic profit, and portfolio approval strategy.",
   problem:
@@ -76,6 +88,12 @@ const projects = [
   category: "Business Analytics • FMCG",
   description:
     "Business planning dashboard for sales performance, profitability, budget variance, revenue forecasting, and product portfolio strategy.",
+  cardProblem:
+    "FMCG teams need to connect sales, costs, margin, budget, and forecast in one planning view.",
+  cardApproach:
+    "Engineered business KPIs, P&L metrics, budget variance, forecasting, and portfolio segmentation.",
+  cardOutput:
+    "Created a dashboard for executive reporting, margin review, budget tracking, and product strategy.",
   overview:
     "This project simulates how an FMCG business planning analyst can connect sales, cost, marketing, budget, forecast, and product portfolio data into one decision-support dashboard.",
   problem:
@@ -107,6 +125,12 @@ const projects = [
     category: "AI System • Retrieval-Augmented Generation",
     description:
       "A privacy-focused retrieval-augmented generation system using local LLM inference for document-based question answering.",
+    cardProblem:
+      "Document QA workflows often create privacy, cost, and control issues when they depend on external APIs.",
+    cardApproach:
+      "Designed a local-first RAG pipeline with chunking, embeddings, vector search, and local LLM inference.",
+    cardOutput:
+      "Built a private document intelligence prototype for grounded answers from local documents.",
     overview:
       "This project explores a local-first RAG system for document intelligence, designed to retrieve relevant information from private documents and generate grounded answers without depending on external model APIs.",
     problem:
@@ -138,6 +162,12 @@ const projects = [
     category: "Machine Learning • Operational Analytics",
     description:
       "A machine learning model to predict delivery price based on operational and order-level signals.",
+    cardProblem:
+      "Delivery platforms need clearer visibility into pricing and operational cost drivers.",
+    cardApproach:
+      "Processed order-level operational data and trained regression models for delivery price prediction.",
+    cardOutput:
+      "Created a Streamlit app that estimates delivery price from user-provided delivery conditions.",
     overview:
       "This project applies machine learning to operational delivery data to estimate delivery price based on order characteristics and real-time operational signals.",
     problem:

@@ -1,9 +1,17 @@
 import Link from "next/link";
 
 export default function ProjectCard({ project }) {
+  const problem = project.cardProblem || project.problem;
+  const approach = project.cardApproach || project.approach;
+  const output = project.cardOutput || project.output;
+
   return (
     <div className="group border border-[#D6E4F2] rounded-2xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-200 flex flex-col bg-white">
       <div className="mb-5">
+        <p className="text-xs uppercase tracking-widest text-[#0353A4] mb-3">
+          {project.category}
+        </p>
+
         <h3 className="text-2xl font-semibold mb-3 text-[#061A40] group-hover:text-[#0353A4] transition">
           {project.title}
         </h3>
@@ -12,30 +20,30 @@ export default function ProjectCard({ project }) {
       </div>
 
       <div className="space-y-3 text-sm text-[#334155] mb-6">
-        {project.problem && (
+        {problem && (
           <div>
             <p className="text-xs uppercase tracking-widest text-[#0353A4] mb-1">
               Problem
             </p>
-            <p className="leading-6">{project.problem}</p>
+            <p className="leading-6">{problem}</p>
           </div>
         )}
 
-        {project.approach && (
+        {approach && (
           <div>
             <p className="text-xs uppercase tracking-widest text-[#0353A4] mb-1">
               Approach
             </p>
-            <p className="leading-6">{project.approach}</p>
+            <p className="leading-6">{approach}</p>
           </div>
         )}
 
-        {project.output && (
+        {output && (
           <div>
             <p className="text-xs uppercase tracking-widest text-[#0353A4] mb-1">
               Output
             </p>
-            <p className="leading-6">{project.output}</p>
+            <p className="leading-6">{output}</p>
           </div>
         )}
       </div>
