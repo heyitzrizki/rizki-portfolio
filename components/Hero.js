@@ -77,7 +77,7 @@ export default function Hero() {
         <div className="border border-[#D6E4F2] rounded-2xl p-5 bg-white">
           <p className="text-sm text-[#5B6B82] mb-2">Current Interest</p>
           <p className="font-semibold text-[#061A40] leading-6">
-            Credit Risk, Business Planning & AI Decision Systems
+            Risk Management, Business Planning & AI Decision Systems
           </p>
         </div>
 
