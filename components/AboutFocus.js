@@ -14,7 +14,7 @@ export default function AboutFocus() {
           </h2>
 
           <p className="text-[#334155] leading-8 mb-5">
-            I’m a Business Analytics graduate student at Ajou University in
+            I’m a Business Analytics and Information Systems graduate student at Ajou University in
             South Korea and a Global Korea Scholarship awardee. My portfolio
             focuses on applied data science, machine learning, and AI-powered
             decision-support systems.
