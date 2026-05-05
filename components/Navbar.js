@@ -34,15 +34,6 @@ export default function Navbar() {
           </a>
 
           <a
-            href="/resume.pdf"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-[#0353A4] transition"
-          >
-            Resume
-          </a>
-
-          <a
             href="mailto:anwars.rizki@gmail.com"
             className="hover:text-[#0353A4] transition"
           >
