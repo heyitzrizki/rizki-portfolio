@@ -51,7 +51,7 @@ export default function Hero() {
             <div className="absolute -inset-4 bg-[#EAF4FF] rounded-[2rem] -z-10" />
 
             <img
-              src="/profile/rizki-profile.jpg"
+              src="/profile/rizki-profile.JPG"
               alt="Rizki Anwar"
               className="w-full rounded-[2rem] border border-[#D6E4F2] shadow-lg object-cover aspect-[4/5] bg-white"
             />
