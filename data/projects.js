@@ -119,6 +119,53 @@ const projects = [
   },
 },
 
+{
+  slug: "kfood-growth-intelligence",
+  title: "K-Food Growth Intelligence & Product Opportunity Simulator",
+  category: "Business Analytics • Market Intelligence",
+  description:
+    "Market intelligence dashboard for identifying K-Food product opportunities using consumer trends, macro indicators, review intelligence, opportunity scoring, and scenario-based planning.",
+  cardProblem:
+    "Food expansion teams often lack complete public sales, competitor, and customer-level data for market prioritization.",
+  cardApproach:
+    "Combined Google Trends, World Bank indicators, synthetic marketplace data, review intelligence, opportunity scoring, and scenario simulation.",
+  cardOutput:
+    "Built a multi-page dashboard for market ranking, product idea recommendation, review insights, and business scenario planning.",
+  overview:
+    "This project simulates how a business planning or market intelligence team can evaluate K-Food product opportunities across selected global markets when proprietary commercial data are unavailable.",
+  problem:
+    "Global food expansion decisions require more than market size estimates. Teams need to understand consumer interest, macro readiness, competitive conditions, customer pain points, product adaptation needs, and financial feasibility. However, real sales, distributor, competitor, and customer-level data are often not publicly available.",
+  approach:
+    "Built an end-to-end decision-support workflow that combines real public data from Google Trends and World Bank with synthetic competitor, review, and financial assumption data. The system converts these signals into opportunity scores, product idea recommendations, market segmentation, and scenario-based business outputs.",
+  systemDesign:
+    "The system separates public data collection, synthetic data generation, trend feature engineering, macro feature engineering, review intelligence, opportunity scoring, product idea mapping, scenario simulation, clustering, and dashboard presentation into a modular business analytics pipeline.",
+  dataMethod:
+    "The workflow uses Google Trends as a relative consumer interest signal and World Bank indicators as macro-market readiness inputs. Synthetic competitor benchmarks, simulated customer reviews, and scenario-based business assumptions are generated to demonstrate business planning workflows when proprietary data are unavailable.",
+  modelPipeline:
+    "The analytics layer applies Google Trends momentum features, macro readiness scoring, TF-IDF and NMF topic modeling for review themes, weighted product opportunity scoring, rule-based product idea mapping, scenario-based revenue and margin simulation, and K-Means clustering for country-category segmentation.",
+  output:
+    "Interactive Streamlit dashboard with executive overview, trend radar, global opportunity map, market opportunity ranking, review intelligence, product idea board, scenario simulator, and methodology notes.",
+  limitations:
+    "This is a portfolio prototype using real public macro and search trend data combined with synthetic competitor, review, and financial assumption data. Outputs should be interpreted as a decision-support demonstration, not real market research, financial forecasting, or company-specific recommendation.",
+  stack: [
+    "Python",
+    "Pandas",
+    "Scikit-learn",
+    "Google Trends",
+    "NLP",
+    "Plotly",
+    "Streamlit",
+    "Scenario Planning",
+  ],
+  github:
+    "https://github.com/heyitzrizki/K-Food-Growth-Intelligence-Product-Opportunity-Simulator",
+  demo: "https://k-food-growth-intelligence-appuct-opportunity-simulator-cfr8ax.streamlit.app/Executive_Overview",
+  images: {
+    architecture: "/projects/kfood-growth-intelligence/architecture.png",
+    dashboard: "/projects/kfood-growth-intelligence/dashboard-overview.png",
+  },
+},
+
   {
     slug: "local-rag",
     title: "Local RAG System",
@@ -148,7 +195,7 @@ const projects = [
     limitations:
       "The current version is a prototype and may require further work on evaluation, retrieval quality, document parsing, user authentication, and deployment configuration.",
     stack: ["Next.js", "FastAPI", "Ollama", "Qdrant"],
-    github: "https://github.com/heyitzrizki",
+    github: "https://github.com/heyitzrizki/local-rag",
     demo: "",
     images: {
       architecture: "/projects/local-rag/architecture.png",
