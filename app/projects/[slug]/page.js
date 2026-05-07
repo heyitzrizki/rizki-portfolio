@@ -3,6 +3,7 @@ import Footer from "../../../components/Footer";
 import projects from "../../../data/projects";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import ImageLightbox from "../../../components/ImageLightbox";
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
@@ -137,10 +138,10 @@ export default async function ProjectDetailPage({ params }) {
                 <h2 className="text-2xl font-semibold mb-4 text-[#061A40]">
                   System Architecture
                 </h2>
-                <img
+                <ImageLightbox
                   src={project.images.architecture}
                   alt={`${project.title} architecture`}
-                  className="w-full rounded-2xl border border-[#D6E4F2]"
+                  className="w-full rounded-2xl border border-[#D6E4F2] cursor-zoom-in"
                 />
               </section>
             )}
@@ -153,10 +154,10 @@ export default async function ProjectDetailPage({ params }) {
                 <h2 className="text-2xl font-semibold mb-4 text-[#061A40]">
                   System Output
                 </h2>
-                <img
+                <ImageLightbox
                   src={project.images.dashboard}
                   alt={`${project.title} dashboard`}
-                  className="w-full rounded-2xl border border-[#D6E4F2]"
+                  className="w-full rounded-2xl border border-[#D6E4F2] cursor-zoom-in"
                 />
               </section>
             )}
