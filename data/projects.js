@@ -128,7 +128,7 @@ const projects = [
   cardProblem:
     "Food expansion teams often lack complete public sales, competitor, and customer-level data for market prioritization.",
   cardApproach:
-    "Combined Google Trends, World Bank indicators, synthetic marketplace data, review intelligence, opportunity scoring, and scenario simulation.",
+    "Built a trend classification framework, review intelligence layer, opportunity scoring engine, and scenario simulator using public and synthetic business data.",
   cardOutput:
     "Built a multi-page dashboard for market ranking, product idea recommendation, review insights, and business scenario planning.",
   overview:
